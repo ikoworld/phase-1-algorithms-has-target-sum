@@ -1,13 +1,23 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if (array[i] + array[j] === target) {
+        return true; 
+      }
+    }
+  }
+  return false; 
 }
-
 /* 
   Write the Big O time complexity of your function here
 */
 
 /* 
-  Add your pseudocode here
+  Add your pseudocode hereRephrase te probleme :
+I need two numbers from an array that when we add them we get the result of the second argument if not it returns false 
+Instructions
+First we have to try with all the numbers and pair them so the first number will be taken and paired with all the numbers in the array and compare the result with the argument next the other number in the array will go through the same process
+
 */
 
 /*
